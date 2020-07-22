@@ -42,7 +42,7 @@ header{
     width:296px;
     height:107px;
 }
-.paragraphs_scroll{
+.paragraphs_scroll-bar{
     margin-right:108px;
     margin-left:221px;
     display:flex;
@@ -51,7 +51,7 @@ header{
     flex: 1;
     
 }
-.paragraphs_scroll > a{
+.paragraphs_scroll-bar > a{
     text-decoration: none;
     font-size: 35px;
 }
