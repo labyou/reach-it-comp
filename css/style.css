@@ -1,12 +1,17 @@
 *{
     margin:0;
     padding:0;
-	border: none;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
 }
 
 main,nav,footer,header,aside{margin: auto;}
+p{ line-height:1.5; color:#000000;}
 
 body {
+    font-family: 'Inter','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff; 
     margin: 0 auto;
 }
@@ -18,7 +23,123 @@ main {
 }
 h2 {
     font-size: 50px;
-    margin-left: 20px;
+    margin:60px 0 40px 40px; 
+}
+#about_us {
+    margin-top: 100px; 
+}
+.information_container h2{
+    margin-top: 15px;
+}
+.employees_container {
+    display:grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, auto);
+}
+.employees_container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.employees_name {
+    font-size: 45px;
+}
+.employees_container div .skills {
+    color:#000000;
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-left: -250px;
+}
+.employees_container div span {
+    font-size: 25px;
+}
+.services_calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.services_calculator div {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.services_calculator h2 {
+    margin-left: 0;
+}
+.services_calculator div p {
+    margin: 10px 0px 10px 0px;
+    font-size: 25px;
+}
+.services_calculator div input {
+    font-size: 30px;
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+.selection{
+    padding-left: 15px;
+    font-size: 25px;
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+}
+div ul {
+    color:#000000;
+    font-size: 20px;
+    margin-left: -250px;
+    list-style-type:none;
+}
+li {
+    background: url('../logo/marker.svg') no-repeat 0 7px;
+    padding-left: 24px;
+}
+li:last-child {
+    margin-bottom: 20px;
+}
+form button {
+    padding:15px 45px;
+}
+span {
+    color:#000000;
+}
+button {
+    background: #CB8080;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-size: 25px;
+    padding:5px 10px;
+    margin-top: 15px;
+    color:#fff;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+button a {
+    text-decoration: none;
+}
+button:hover {
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.form_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin-bottom: 100px;
+    justify-content: space-between;
+
 }
 a{
   color: #fff; 
@@ -29,6 +150,8 @@ header{
     height: 162px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    align-content: center;
     width: 100%;
     top: 0;
 }
@@ -38,12 +161,13 @@ footer {
     height:120px;
     font-size: 30px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
-.description {
+.h2_description {
     margin-left: 40px;
+    font-size: 30px;
 }
 .header_overlay{
     margin: 0 50px;
@@ -62,37 +186,101 @@ footer {
     display: flex;
     align-items: center;
 }
-.logotype > h1{
+.logotype h1{
+    margin-bottom: 10px;
     font-size: 70px; 
-    margin-left:-80px; 
+    margin-left:-75px; 
     color: #fff;
     display:flex;
     flex-direction: column;
     align-items: center; 
     justify-content: flex-start;
 }
-.logotype > h1 > span{
+.logotype h1 span{
     margin-top: -17px;
     font-size: 20px;
     color: #fff;
 }
-.logotype > img{
+.logotype img{
     width:296px;
     height:107px;
 }
-.paragraphs_scroll-bar{
+.paragraphs_scroll_bar {
+    width: 100%;
     display:flex;
     justify-content: space-between;
+    align-items: center;
+    align-content: center;
     flex: 1;
+
 }
-.paragraphs_scroll-bar > a{
+.paragraphs_scroll_bar a{
+    position: relative;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 25px;
 }
-.formContainer > nav .icon
+
+.paragraphs_scroll_bar a:after {
+    display: block;
+    position: absolute;
+    width: 0;
+    height:2px;
+    content: "";
+    background-color: #fff;
+    transition: width 0.3s ease-out;
+}
+.paragraphs_scroll_bar a:hover:after,
+.paragraphs_scroll_bar a:focus:after {
+    width: 100%;
+}
+.icons_section {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
+
+form {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+#contact_us {
+    margin-left: 0px;
+}
+.form_inputs {
+    text-rendering: auto;
+    letter-spacing: normal;
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 25px;
+}
+.message {
+    width: 700px;
+    height: 350px;
+}
+textarea {
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+    overflow: hidden;
+}
+section .icon
 {
-    width:100px;
-    height:100px;
+    widows: 100px;
+    height: 100px;
+    border-radius: 5px;
 }
 .employees
 {

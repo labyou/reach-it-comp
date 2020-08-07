@@ -1,0 +1,205 @@
+
+@media (max-width: 1550px) and (min-width:1200px;) {
+    .paragraphs_scroll_bar a{
+        font-size: 20px;
+    }
+    .paragraphs_scroll_bar {
+        margin-left: -70px;
+    }
+}
+
+@media (max-width: 1200px) {
+    h2 {
+        font-size: 30px;
+        margin-top: 60px;
+    }
+    #about_us{
+      margin-top: 60px;
+    }
+  .employees_container {
+    grid-template-columns: repeat(1, auto);
+    }
+    .employees_name {
+        font-size: 45px;  
+    }
+    .employees_container div .skills {
+        font-size: 35px;
+        margin-bottom: 15px;
+        margin-left: -250px;
+    }
+    .services_calculator div {
+        width: 500px;
+    }
+    .h2_description {
+        font-size: 20px;
+    }
+    .services_calculator div {
+        width: 500px;
+    }
+    .services_calculator div input {
+        font-size: 20px;
+        height: 50px;
+    }
+    .selection{
+        font-size: 20px;
+        height: 50px;
+    }
+    div ul {
+        font-size: 25px;
+        margin-left: -10px;
+    }
+    li {
+        padding-left: 35px;
+    }
+    .header_overlay {
+        display:flex;
+        flex-direction: column;
+    }
+    .logotype{
+        margin-right: 0;
+        width :479px;
+        height: 107px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .logotype img{
+        width:220px;
+        height:85px;
+    }
+    .logotype h1{
+        margin-top: -9px;
+        margin-left: -52px;
+        font-size: 30px; 
+        color: #fff;
+    }
+    .logotype h1 span{
+        margin-top: -10px;
+        display: block;
+        font-size: 10px;
+        color: #fff;
+    }
+    .paragraphs_scroll_bar{
+        width:100%;
+    }
+    .paragraphs_scroll_bar a{
+        font-size: 15px;
+    }
+    .icons_section {
+        width: 500px;
+        margin-bottom: 60px;
+    }
+    form {
+        width: 500px;
+    }
+    .form_inputs {
+        text-rendering: auto;
+        letter-spacing: normal;
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    .message {
+        width: 500px;
+        height: 350px;
+    }
+    section .icon
+    {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width:500px) {
+    header{
+        height: 200px;
+        width: 100%;
+        top: 0;
+    }
+    h2 {
+        font-size: 25px;
+        margin-top: 45px;
+        margin-left: 20px;
+    }
+    #about_us{
+        margin-top: 45px;
+      }
+      .employees_name {
+        font-size: 30px;  
+    }
+    .employees_container div .skills {
+        font-size: 20px;
+        margin-bottom: 15px;
+        margin-left: -200px;
+    }
+    .services_calculator div {
+        width: 350px;
+    }
+    .h2_description {
+        font-size: 13px;
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+    .services_calculator div {
+        width: 350px;
+    }
+    .services_calculator div input {
+        font-size: 10px;
+        height: 30px;
+        border-radius: 7px;
+    }
+    .selection{
+        font-size: 10px;
+        height: 30px;
+        border-radius: 7px;
+    }
+    div ul {
+        font-size: 17px;
+        margin-left: -10px;
+    }
+    li{
+        background: url('../logo/marker.svg') no-repeat 0 4px;
+        padding-left: 20px;
+    }
+    .paragraphs_scroll_bar a{
+        font-size: 15px;
+    }
+    .logotype{
+        margin-top: -30px;
+        margin-right: 0;
+        width :479px;
+        height: 107px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .paragraphs_scroll_bar{
+        width:100%;
+        padding-top: 20px;
+    }
+    .icons_section {
+        width: 350px;
+        margin-bottom: 20px;
+    }
+    form {
+        width: 350px;
+    }
+    .form_inputs {
+        height: 30px;
+        border-radius: 7px;
+        font-size: 10px;
+    }
+    .message {
+        width: 350px;
+        height: 150px;
+    }
+    footer {
+        height:70px;
+        font-size: 20px;
+        width: 100%;
+    }
+
+}
